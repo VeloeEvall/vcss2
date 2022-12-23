@@ -1,0 +1,14 @@
+$bgcolor: #000;
+$hoverbgcolor: #121212;
+$color: #fff;
+
+button.vcss {
+    background-color: $bgcolor;
+    color: $color;
+    border: none;
+    outline: none;
+}
+
+button.vcss:hover {
+    background-color: $hoverbgcolor;
+}
