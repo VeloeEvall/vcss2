@@ -1,7 +1,14 @@
 <p align="center">
+    <a href="https://veloeevall.github.io/vcss2/" target="_blank" rel="noopener">
+        <img src="https://i.imgur.com/vvmehRC.png" alt="vCSS2 - Simple and ready css" />
+    </a>
+</p>
+
+<p align="center">
     <a href="https://github.com/pocketbase/pocketbase/releases" target="_blank" rel="noopener"><img src="https://img.shields.io/badge/latest_release-soon-blue" alt="Latest releases" /></a>
 </p>
-# vCSS 2
+
+# vCSS2
 **CSS library made in a minimalist style based on material design**
 Demo and docs available [here](https://veloeevall.github.io/vcss2/)
 # Download
