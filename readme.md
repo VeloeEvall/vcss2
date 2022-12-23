@@ -1,11 +1,11 @@
 <p align="center">
-    <a href="https://veloeevall.github.io/vcss2/" target="_blank" rel="noopener">
-        <img src="https://i.imgur.com/vvmehRC.png" alt="vCSS2 - Simple and ready css" />
-    </a>
+    <a href="https://github.com/pocketbase/pocketbase/releases" target="_blank" rel="noopener"><img src="https://img.shields.io/badge/latest_release-soon-blue" alt="Latest releases" /></a>
 </p>
 
 <p align="center">
-    <a href="https://github.com/pocketbase/pocketbase/releases" target="_blank" rel="noopener"><img src="https://img.shields.io/badge/latest_release-soon-blue" alt="Latest releases" /></a>
+    <a href="https://veloeevall.github.io/vcss2/" target="_blank" rel="noopener">
+        <img src="https://i.imgur.com/vvmehRC.png" alt="vCSS2 - Simple and ready css" />
+    </a>
 </p>
 
 # vCSS2
