@@ -1,5 +1,5 @@
 <p align="center">
-    <a href="https://github.com/pocketbase/pocketbase/releases" target="_blank" rel="noopener"><img src="https://img.shields.io/badge/latest_release-soon-blue" alt="Latest releases" /></a>
+    <a href="https://github.com/VeloeEvall/vcss2/releases" target="_blank" rel="noopener"><img src="https://img.shields.io/badge/latest_release-soon-blue" alt="Latest releases" /></a>
 </p>
 
 <p align="center">
