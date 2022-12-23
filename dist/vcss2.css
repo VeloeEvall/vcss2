@@ -213,6 +213,26 @@ a.button.secondary:hover {
   background-color: hsl(222deg, 11%, 47%);
 }
 
+a.link {
+  color: hsl(208deg, 92%, 54%);
+  padding: 10px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.2s cubic-bezier(0.67, 0.1, 0.42, 0.85);
+}
+
+a.link.secondary {
+  color: hsl(222deg, 11%, 37%);
+}
+
+a.link:hover {
+  color: hsl(208deg, 92%, 64%);
+}
+
+a.link.secondary:hover {
+  color: hsl(222deg, 11%, 47%);
+}
+
 .flextable {
   display: flex;
   position: relative;

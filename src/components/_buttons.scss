@@ -1,0 +1,50 @@
+@import '_variables.scss';
+
+button.button,
+a.button {
+    background-color: $button__primary;
+    color: $text_main;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    text-decoration: none;
+    transition: background-color .2s $transition_easing;
+}
+
+button.button.secondary,
+a.button.secondary {
+    background-color: $button__secondary;
+}
+
+button.button:hover,
+a.button:hover {
+    background-color: $button__primary_hover;
+    cursor: pointer;
+}
+
+button.button.secondary:hover,
+a.button.secondary:hover {
+    background-color: $button__secondary_hover;
+}
+
+a.link {
+    color: $button__primary;
+    padding: 10px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color .2s $transition_easing;
+}
+
+a.link.secondary {
+    color: $button__secondary;
+}
+
+a.link:hover {
+    color: $button__primary_hover;
+}
+
+a.link.secondary:hover {
+    color: $button__secondary_hover;
+}
