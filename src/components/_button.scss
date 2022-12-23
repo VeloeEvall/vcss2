@@ -1,14 +1,30 @@
-$bgcolor: #000;
-$hoverbgcolor: #121212;
-$color: #fff;
+@import '_variables.scss';
 
-button.vcss {
-    background-color: $bgcolor;
-    color: $color;
+button.button,
+a.button {
+    background-color: $button_bg_primary;
+    color: $text_main;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: bold;
     border: none;
     outline: none;
+    text-decoration: none;
+    transition: background-color .2s $transition_easing;
 }
 
-button.vcss:hover {
-    background-color: $hoverbgcolor;
+button.button.secondary,
+a.button.secondary {
+    background-color: $button_bg_secondary;
+}
+
+button.button:hover,
+a.button:hover {
+    background-color: $button_bg_primary_hover;
+    cursor: pointer;
+}
+
+button.button.secondary:hover,
+a.button.secondary:hover {
+    background-color: $button_bg_secondary_hover;
 }

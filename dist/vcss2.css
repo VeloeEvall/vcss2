@@ -184,15 +184,66 @@ summary {
   background: rgb(51, 51, 51);
 }
 
-button.vcss {
-  background-color: #000;
-  color: #fff;
+button.button,
+a.button {
+  background-color: hsl(208deg, 92%, 54%);
+  color: #ffffff;
+  padding: 10px;
+  border-radius: 5px;
+  font-weight: bold;
   border: none;
   outline: none;
+  text-decoration: none;
+  transition: background-color 0.2s cubic-bezier(0.67, 0.1, 0.42, 0.85);
 }
 
-button.vcss:hover {
-  background-color: #121212;
+button.button.secondary,
+a.button.secondary {
+  background-color: hsl(222deg, 11%, 37%);
+}
+
+button.button:hover,
+a.button:hover {
+  background-color: hsl(208deg, 92%, 64%);
+  cursor: pointer;
+}
+
+button.button.secondary:hover,
+a.button.secondary:hover {
+  background-color: hsl(222deg, 11%, 47%);
+}
+
+.flextable {
+  display: flex;
+  position: relative;
+}
+
+.flextable.wrap {
+  flex-wrap: wrap;
+}
+
+.flextable.d-col {
+  flex-direction: column;
+}
+
+.flextable.d-row {
+  flex-direction: row;
+}
+
+.flextable.a-center {
+  align-items: center;
+}
+
+.flextable.j-center {
+  justify-content: center;
+}
+
+.row {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  -moz-column-gap: clamp(0.2rem, 1vw, 1rem);
+       column-gap: clamp(0.2rem, 1vw, 1rem);
 }
 
 html {
@@ -211,4 +262,12 @@ button,
 select,
 a {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.bg-main {
+  background-color: #1C1B21;
+}
+
+.bg-dark {
+  background-color: #26262D;
 }/*# sourceMappingURL=vcss2.css.map */

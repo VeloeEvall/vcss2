@@ -1,0 +1,31 @@
+.flextable {
+    display: flex;
+    position: relative;
+}
+
+.flextable.wrap {
+    flex-wrap: wrap;
+}
+
+.flextable.d-col {
+    flex-direction: column;
+}
+
+.flextable.d-row {
+    flex-direction: row;
+}
+
+.flextable.a-center {
+    align-items: center;
+}
+
+.flextable.j-center {
+    justify-content: center;
+}
+
+.row {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: clamp(0.2rem, 1vw, 1rem);
+}
