@@ -1,14 +1,3 @@
-button.vcss {
-  background-color: #000;
-  color: #fff;
-  border: none;
-  outline: none;
-}
-
-button.vcss:hover {
-  background-color: #121212;
-}
-
 ::-webkit-scrollbar {
   width: 7px;
   height: 7px;
@@ -51,9 +40,15 @@ button.vcss:hover {
   background: rgb(51, 51, 51);
 }
 
-::-moz-selection {
-  color: var(--text-main);
-  background: #000;
+button.vcss {
+  background-color: #000;
+  color: #fff;
+  border: none;
+  outline: none;
+}
+
+button.vcss:hover {
+  background-color: #121212;
 }
 
 html {
