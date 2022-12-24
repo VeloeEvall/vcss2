@@ -4,8 +4,7 @@
 @import 'components/_variables.scss';
 @import 'components/_flextables.scss';
 @import 'components/_text.scss';
-
-// Default styling
+@import 'components/_themetoggle.scss';
 
 html {
     -moz-box-sizing: border-box;
@@ -29,10 +28,27 @@ a {
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
+:root {
+    --bgmain: $background;
+    --bgmain_light: $background_light;
+}
+
 .bg-main {
     background-color: $background;
 }
 
 .bg-dark {
     background-color: $bg_dark;
+}
+
+.text-main {
+    color: $text_main;
+}
+
+.text-secondary {
+    color: $text_secondary;
+}
+
+.text-gray {
+    color: $text_gray;
 }

@@ -1,4 +1,5 @@
 $background: #1C1B21;
+$background_light: #ffffff;
 
 $bg_dark: #26262D;
 $bg_dark_lighter: #272A37;
@@ -9,7 +10,10 @@ $button__secondary: hsl(222, 11%, 37%);
 $button__secondary_hover: hsl(222, 11%, 47%);
 
 $text_main: #ffffff;
+$text_main_light: #000;
 $text_secondary: #9AA5B5;
 $text_gray: #51525C;
 
 $transition_easing: cubic-bezier(0.67, 0.1, 0.42, 0.85);
+
+$animation_duration: 200ms;

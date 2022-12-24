@@ -344,6 +344,128 @@ p {
   margin-bottom: 0.5rem;
 }
 
+body {
+  color: #000;
+  background-color: #ffffff;
+  transition: color 200ms ease-in-out, background 200ms ease-in-out;
+}
+
+body.dark {
+  color: #ffffff;
+  background: #1C1B21;
+}
+
+.mode-toggle {
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.toggle-switch {
+  margin: 0;
+  padding: 0;
+  width: 48px;
+  height: 28px;
+  border: none;
+  outline: none;
+  overflow: hidden;
+  position: relative;
+  border-radius: 14px;
+  display: inline-block;
+  background: #404346;
+  cursor: pointer;
+}
+
+body.dark .toggle-switch {
+  width: 48px;
+}
+
+.toggle-switch,
+.toggle-switch:before,
+.toggle-switch:after {
+  transition: all 200ms ease-in-out;
+}
+
+body.dark .toggle-switch {
+  background: #dce0e3;
+}
+
+.toggle-switch:before {
+  top: 4px;
+  left: 24px;
+  content: "";
+  width: 20px;
+  height: 20px;
+  display: block;
+  position: absolute;
+  border-radius: 12px;
+  background: #dce0e3;
+}
+
+body.dark .toggle-switch:before {
+  left: 4px;
+  background: #2d2f31;
+}
+
+.toggle-switch:after {
+  content: "";
+  top: 14px;
+  right: 2px;
+  width: 1px;
+  height: 1px;
+  display: block;
+  position: absolute;
+  border-radius: 0.5px;
+  background: #404346;
+}
+
+body.dark .toggle-switch:after {
+  top: -2px;
+  right: 2px;
+  width: 32px;
+  height: 32px;
+  border-radius: 16px;
+  background: #dce0e3;
+}
+
+.toggle-switch:hover,
+.toggle-switch:hover:after {
+  background: #2d2f31;
+}
+
+.toggle-switch:focus,
+.toggle-switch:active,
+.toggle-switch:active:after {
+  background: #141516;
+}
+
+body.dark .toggle-switch:hover,
+body.dark .toggle-switch:hover:after {
+  background: #fcfefe;
+}
+
+body.dark .toggle-switch:focus,
+body.dark .toggle-switch:active,
+body.dark .toggle-switch:active:after {
+  background: #cdd1d5;
+}
+
+.noselect {
+  user-select: none;
+  -ms-user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+}
+
+.disableEasingTemporarily,
+.disableEasingTemporarily:after,
+.disableEasingTemporarily:before {
+  transition-property: none !important;
+  transform: none !important;
+  -webkit-animation: none !important;
+  animation: none !important;
+}
+
 html {
   box-sizing: border-box;
 }
@@ -362,10 +484,27 @@ a {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
+:root {
+  --bgmain: $background;
+  --bgmain_light: $background_light;
+}
+
 .bg-main {
   background-color: #1C1B21;
 }
 
 .bg-dark {
   background-color: #26262D;
+}
+
+.text-main {
+  color: #ffffff;
+}
+
+.text-secondary {
+  color: #9AA5B5;
+}
+
+.text-gray {
+  color: #51525C;
 }/*# sourceMappingURL=vcss2.css.map */
