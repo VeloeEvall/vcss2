@@ -1,3 +1,4 @@
+// theme toggle section
 var darkmodeactive = localStorage.getItem("darkmode");
 function goDark() {
     document.body.classList.add("dark");
@@ -30,19 +31,18 @@ if (document.querySelector(".toggle-switch")) {
         }
     });
 }
-
 window.onload = () => {
-    document.querySelectorAll('*').forEach((el)=>{
-        el.classList.add('disableEasingTemporarily');
-    })
+    document.querySelectorAll("*").forEach((el) => {
+        el.classList.add("disableEasingTemporarily");
+    });
     if (localStorage.darkmode == "true") {
         goDark();
     } else if (localStorage.darkmode == "false") {
         goLight();
     }
     setTimeout(() => {
-        document.querySelectorAll('*').forEach((el)=>{
-            el.classList.remove('disableEasingTemporarily');
-        })
+        document.querySelectorAll("*").forEach((el) => {
+            el.classList.remove("disableEasingTemporarily");
+        });
     }, 20);
 };
