@@ -147,41 +147,45 @@ summary {
   height: 7px;
 }
 
-::-webkit-scrollbar-button {
-  width: 0px;
-  height: 0px;
+::-webkit-scrollbar-track {
+  background-color: rgb(0, 0, 0);
 }
 
 ::-webkit-scrollbar-thumb {
-  background: rgb(225, 225, 225);
-  border: 0px none rgb(255, 255, 255);
-  border-radius: 0px;
+  background-color: grey;
+  background: linear-gradient(to bottom, #ff0084, #4bc0c8);
+  background-size: 200% 200%;
+  border-radius: 5px;
 }
 
-::-webkit-scrollbar-track {
-  background: rgb(102, 102, 102);
-  border: 0px none rgb(255, 255, 255);
-  border-radius: 0px;
+::-webkit-scrollbar-button {
+  width: 0;
+  height: 0;
 }
 
 ::-webkit-scrollbar-corner {
-  background: transparent;
+  background: 0 0;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: rgb(255, 255, 255);
+  background-position: 0 50%;
 }
 
 ::-webkit-scrollbar-thumb:active {
-  background: rgb(0, 0, 0);
+  background-position: 100% 100%;
 }
 
 ::-webkit-scrollbar-track:hover {
-  background: rgb(102, 102, 102);
+  background-color: rgb(10, 10, 10);
 }
 
 ::-webkit-scrollbar-track:active {
-  background: rgb(51, 51, 51);
+  background-color: rgb(20, 20, 20);
+}
+
+:root {
+  --p_background: #1C1B21;
+  --p_background_light: #ffffff;
 }
 
 button.button,
@@ -233,6 +237,11 @@ a.link.secondary:hover {
   color: hsl(222deg, 11%, 47%);
 }
 
+:root {
+  --p_background: #1C1B21;
+  --p_background_light: #ffffff;
+}
+
 .flextable {
   display: flex;
   position: relative;
@@ -242,7 +251,8 @@ a.link.secondary:hover {
   flex-wrap: wrap;
 }
 
-.flextable.d-col {
+.flextable.d-col,
+.row.d-col {
   flex-direction: column;
 }
 
@@ -250,11 +260,13 @@ a.link.secondary:hover {
   flex-direction: row;
 }
 
-.flextable.a-center {
+.flextable.a-center,
+.row.a-center {
   align-items: center;
 }
 
-.flextable.j-center {
+.flextable.j-center,
+.row.j-center {
   justify-content: center;
 }
 
@@ -342,6 +354,11 @@ h6,
 p {
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
+}
+
+:root {
+  --p_background: #1C1B21;
+  --p_background_light: #ffffff;
 }
 
 body {
@@ -464,6 +481,32 @@ body.dark .toggle-switch:active:after {
   transform: none !important;
   -webkit-animation: none !important;
   animation: none !important;
+}
+
+form {
+  padding: 15px;
+  margin: 10px 0;
+  color: #000;
+}
+
+body.dark form {
+  color: #ffffff;
+}
+
+form .row {
+  margin: 0;
+  row-gap: 1.3rem;
+}
+
+form .form-title {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+form .form-description {
+  font-size: 1rem;
+  font-weight: 300;
+  color: #51525C;
 }
 
 html {

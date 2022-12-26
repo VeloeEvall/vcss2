@@ -7,7 +7,8 @@
     flex-wrap: wrap;
 }
 
-.flextable.d-col {
+.flextable.d-col,
+.row.d-col {
     flex-direction: column;
 }
 
@@ -15,11 +16,13 @@
     flex-direction: row;
 }
 
-.flextable.a-center {
+.flextable.a-center,
+.row.a-center {
     align-items: center;
 }
 
-.flextable.j-center {
+.flextable.j-center,
+.row.j-center {
     justify-content: center;
 }
 

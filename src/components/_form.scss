@@ -1,0 +1,25 @@
+form {
+    padding: 15px;
+    margin: 10px 0;
+    color: $text_main_light;
+}
+
+body.dark form {
+    color: $text_main;
+}
+
+form .row {
+    margin: 0;
+    row-gap: 1.3rem;
+}
+
+form .form-title {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+form .form-description {
+    font-size: 1rem;
+    font-weight: 300;
+    color: $text_gray;
+}
